@@ -10,24 +10,54 @@
         android:id="@+id/buttonGoToMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="go to main"
-        android:onClick="onClick"
-        tools:layout_editor_absoluteX="140dp"
-        tools:layout_editor_absoluteY="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
         android:layout_marginStart="129dp"
         android:layout_marginTop="62dp"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentStart="true" />
+        android:background="@drawable/shape_circle"
+        android:onClick="onClick"
+        android:padding="16dp"
+        android:text="go to main"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="140dp" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="61dp"
         android:ems="10"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="62dp"
-        android:layout_marginTop="61dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        tools:layout_editor_absoluteY="62dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginRight="50dp"
+            android:text="Hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:paddingRight="50dp"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello" />
+
+
+        <Button
+            android:text="Hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
 </RelativeLayout>

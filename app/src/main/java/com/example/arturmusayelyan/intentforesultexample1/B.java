@@ -18,10 +18,11 @@ public class B extends AppCompatActivity {
 
 
     public void onClick(View view) {
-        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-        String message=editText.getText().toString();
-        intent.putExtra("Kay",message);
-        setResult(RESULT_OK,intent);
+        //Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+        Intent intent = getIntent();
+        String message = editText.getText().toString();
+        intent.putExtra("Kay", message);
+        setResult(RESULT_OK, intent);
         finish();
     }
 }
