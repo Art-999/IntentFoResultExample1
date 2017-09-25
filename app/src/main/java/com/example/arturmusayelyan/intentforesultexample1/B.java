@@ -16,6 +16,7 @@ public class B extends AppCompatActivity {
         editText = (EditText) findViewById(R.id.editText);
     }
 
+
     public void onClick(View view) {
         Intent intent=new Intent(getApplicationContext(),MainActivity.class);
         String message=editText.getText().toString();
