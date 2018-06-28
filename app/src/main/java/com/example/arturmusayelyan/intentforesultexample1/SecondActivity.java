@@ -6,22 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class B extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
     private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_b);
+        setContentView(R.layout.activity_second);
         editText = (EditText) findViewById(R.id.editText);
     }
 
 
     public void onClick(View view) {
-        //Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+        //Intent intent=new Intent(getApplicationContext(),FirstActivity.class);
         Intent intent = getIntent();
         String message = editText.getText().toString();
-        intent.putExtra("Kay", message);
+        intent.putExtra(FirstActivity.KAY_1, message);
         setResult(RESULT_OK, intent);
         finish();
     }
